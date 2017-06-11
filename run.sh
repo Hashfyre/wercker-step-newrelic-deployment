@@ -20,7 +20,7 @@ NR_DEPLOY_APP="deployment[app_name]"
 NR_DEPLOY_REV="deployment[revision]"
 NR_DEPLOY_SKIP="deployment[skip]"
 
-if [ "$NR_DEPLOY_SKIP=$WERCKER_NEWRELIC_DEPLOYMENT_SKIP" == "true" ]; then
+if [ "$WERCKER_NEWRELIC_DEPLOYMENT_SKIP" == "false" ]; then
   curl \
     -H "$NR_API_VAR:${WERCKER_NEWRELIC_DEPLOYMENT_API_KEY}" \
     -d "$NR_DEPLOY_APP=${WERCKER_NEWRELIC_DEPLOYMENT_APP_NAME}" \
