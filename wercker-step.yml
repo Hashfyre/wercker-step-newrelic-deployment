@@ -1,5 +1,5 @@
 name: newrelic-deployment
-version: 0.0.2
+version: 0.0.3
 description: Send a deployment event to NewRelic
 keywords:
   - deployment
@@ -13,7 +13,7 @@ properties:
     required: true
   skip:
     type: string
-    default: false
+    default: true
     required: false
   revision:
     type: string
