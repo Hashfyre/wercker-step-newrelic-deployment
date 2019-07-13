@@ -8,12 +8,11 @@ properties:
   api_key:
     type: string
     required: true
-  app_name:
+  app_id:
     type: string
     required: true
-  skip:
+  on:
     type: string
-    default: true
     required: false
   revision:
     type: string
